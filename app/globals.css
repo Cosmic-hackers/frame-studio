@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-manrope), "Manrope", sans-serif;
+  --font-mono: var(--font-plex), ui-monospace, monospace;
+  --font-display: var(--font-anton), Impact, sans-serif;
+  --color-ink: #111111;
+  --color-paper: #f5f5f0;
+  --color-lime: #c8ff00;
+  --color-mute: #858585;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0a;
+  color: #f5f5f0;
+  font-family: var(--font-manrope), "Manrope", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  opacity: 0.16;
+  background-image: radial-gradient(rgba(245, 245, 240, 0.55) 0.6px, transparent 0.7px);
+  background-size: 4px 4px;
+  mix-blend-mode: overlay;
+}
+
+::selection {
+  background: #c8ff00;
+  color: #111111;
+}
+
+:focus-visible {
+  outline: 2px solid #c8ff00;
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 80;
+  background: #c8ff00;
+  color: #111111;
+  padding: 0.6rem 0.9rem;
+  font-family: var(--font-plex), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.skip:focus {
+  top: 1rem;
+}
+
+.display {
+  font-family: var(--font-anton), Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.84;
+  text-transform: uppercase;
+}
+
+.kicker {
+  font-family: var(--font-plex), ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #858585;
+}
+
+.halftone {
+  background-image: radial-gradient(currentColor 0.8px, transparent 0.9px);
+  background-size: 7px 7px;
+}
+
+.frame-mask {
+  clip-path: inset(7% 7% 7% 7%);
+  transition: clip-path 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.group:hover .frame-mask,
+.group:focus-visible .frame-mask {
+  clip-path: inset(0%);
+}
+
+.marquee {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: ticker 28s linear infinite;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 36s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 55s linear infinite;
+}
+
+.hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+input,
+textarea,
+select {
+  accent-color: #c8ff00;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .frame-mask {
+    transition: none;
+    clip-path: inset(0);
+  }
+
+  .marquee {
+    animation: none;
+  }
+
+  .animate-spin-slow,
+  .animate-spin-reverse {
+    animation: none !important;
+  }
+
+  body::before {
+    display: none;
+  }
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "cccccccc-cccc-4ccc-8ccc-ccccccccccc1",
+    "slug": "restraint-is-a-loud-decision",
+    "title": "Restraint is a loud decision",
+    "excerpt": "Taking things away is not a lack of ideas. It is how a studio makes the remaining idea readable.",
+    "categorySlug": "perspective",
+    "publishedAt": "2026-09-12",
+    "seoTitle": "Restraint is a loud decision — FRAME Studio Journal",
+    "seoDescription": "Why FRAME treats editing as the loudest creative decision, and how restraint shows up in type, color, and interface.",
+    "published": true,
+    "blocks": [
+      { "type": "p", "text": "Studios are often asked to add. Another color, another sequence, another panel that explains the panel above it. The work gets heavier and the idea gets quieter. Restraint is the decision to keep one signal strong enough that a person can repeat it after they leave the page." },
+      { "type": "h2", "text": "Scarcity needs a rule" },
+      { "type": "p", "text": "A palette of black and lime is not automatically disciplined. If lime appears on every edge, it becomes wallpaper. On the Novara concept we reserved the signal color for confirmation: a recorded value, a current link, a closed mark. The rule is what makes the color loud. Without the rule, the same hex code is decoration." },
+      { "type": "quote", "text": "If everything is emphasized, the page is whispering." },
+      { "type": "p", "text": "The same logic applies to motion. A mask that opens on the first image can be memorable. The same mask on every card becomes a delay. We write the job of a movement before we write the duration. Orientation, emphasis, feedback, or continuity. If we cannot name the job, the movement does not ship." },
+      { "type": "h2", "text": "What we keep" },
+      { "type": "p", "text": "Restraint is not emptiness. The page still needs a heading that can be read from across a room, a sentence that says what the work is, and a way to go further. Those three things get the contrast. Supporting detail can be quiet, grey, and small, as long as it is still readable. We test that last part. A grey that looks elegant in a screenshot and fails on a phone is not restraint. It is a contrast error." },
+      { "type": "p", "text": "This journal, like the projects it discusses, is a concept. The opinion is still one we would take into a real room: edit until the idea is unavoidable, then stop." }
+    ]
+  },
+  {
+    "id": "cccccccc-cccc-4ccc-8ccc-ccccccccccc2",
+    "slug": "interfaces-that-feel-inevitable",
+    "title": "Interfaces that feel inevitable",
+    "excerpt": "A product feels obvious after the structure is right. Visual style cannot rescue a confused sequence.",
+    "categorySlug": "craft",
+    "publishedAt": "2026-08-28",
+    "seoTitle": "Interfaces that feel inevitable — FRAME Studio Journal",
+    "seoDescription": "How FRAME designs product interfaces by settling the sequence before the surface, using the fictional Pulse study as proof.",
+    "published": true,
+    "blocks": [
+      { "type": "p", "text": "People call an interface intuitive when they cannot see the decisions. Those decisions are mostly about order. What is on the first screen. What is a click away. What is absent on purpose. Style comes after that sequence feels fair." },
+      { "type": "h2", "text": "Start from the loop" },
+      { "type": "p", "text": "On Pulse, the fictional writing tool in our work section, the loop is short: open a draft, see where readers leave, revise that section, mark it done. Any feature that did not serve the loop was treated as a later screen or cut. The home surface is the manuscript. The metric sits in the margin. A chart exists, two steps away, for the editor who wants it." },
+      { "type": "p", "text": "That arrangement is the design. The plum field and the hot accent are how it looks. They are not why it feels obvious. If the chart had been the home screen, no typeface would have fixed the feeling that the tool was watching the writer instead of helping them." },
+      { "type": "quote", "text": "Inevitable is a structural compliment. It is not a visual one." },
+      { "type": "h2", "text": "Design the awkward states" },
+      { "type": "p", "text": "Empty, loading, error, and insufficient-data states are part of the loop. Pulse's margin note includes a limit: a leave-point does not explain why a reader stopped. Writing that sentence into the interface is a design task. It keeps the product from sounding more certain than the evidence." },
+      { "type": "p", "text": "We use the same test on marketing sites. If the first screen needs the animation in order to be understood, the structure is not finished. Motion can add tone. It should not be load-bearing for the meaning." }
+    ]
+  },
+  {
+    "id": "cccccccc-cccc-4ccc-8ccc-ccccccccccc3",
+    "slug": "motion-with-a-job",
+    "title": "Motion with a job to do",
+    "excerpt": "Movement should orient, emphasize, confirm, or connect. Anything else is a cost the reader pays.",
+    "categorySlug": "craft",
+    "publishedAt": "2026-08-02",
+    "seoTitle": "Motion with a job to do — FRAME Studio Journal",
+    "seoDescription": "FRAME's rules for motion design: name the job, respect reduced motion, and keep transitions shorter than the decision.",
+    "published": true,
+    "blocks": [
+      { "type": "p", "text": "Motion is the easiest way to make a page look expensive and feel slow. We start from the opposite end. A transition should be shorter than the decision it supports. If the mask takes longer than reading the label underneath it, the mask is wrong." },
+      { "type": "h2", "text": "Four jobs" },
+      { "type": "p", "text": "Orientation tells you where you are. The page fade on this site is orientation: a short confirmation that the route changed. Emphasis points at one thing, the way a headline settles into place. Feedback answers an action, the way a button acknowledges a hover without moving so far that the click misses. Continuity connects two states, the way a project image opens from a card into a case study." },
+      { "type": "p", "text": "Aether, our fictional listening-room site, uses continuity inside each room and almost none between rooms. The room change is a cut. The instrument inside the room is allowed to arrive. That split keeps the sequence feeling spatial without making the reader wait to read." },
+      { "type": "h2", "text": "Reduced motion is a composition" },
+      { "type": "quote", "text": "A fallback that looks broken is a design that was never finished." },
+      { "type": "p", "text": "When a person asks the system for less motion, they should get the same hierarchy, immediately. We do not leave empty boxes where an animation was supposed to reveal the content. The still frame is designed. On this website, reveals, the custom cursor, and magnetic shifts step aside when that preference is set. The type, the contrast, and the links stay." },
+      { "type": "p", "text": "If you are building your own system, write the four jobs down and force every storyboard to pick one. The work gets shorter. The pages get faster. The moments you keep are the ones people remember." }
+    ]
+  },
+  {
+    "id": "cccccccc-cccc-4ccc-8ccc-ccccccccccc4",
+    "slug": "brutal-clarity",
+    "title": "The case for brutal clarity",
+    "excerpt": "Brutalist layout is not an excuse for harsh reading. It is a way to make structure visible.",
+    "categorySlug": "perspective",
+    "publishedAt": "2026-07-18",
+    "seoTitle": "The case for brutal clarity — FRAME Studio Journal",
+    "seoDescription": "What brutalist editorial design means at FRAME: visible structure, high contrast, and type that can be read.",
+    "published": true,
+    "blocks": [
+      { "type": "p", "text": "Brutalist editorial design shows the frame. Big type, hard edges, uneven grids, raw color. Used carelessly, it becomes a costume that makes text hard to read and buttons hard to find. Used carefully, it makes the structure of the page obvious, which is a kindness." },
+      { "type": "h2", "text": "Asymmetry still needs a line" },
+      { "type": "p", "text": "An uneven grid is not the absence of a grid. On this site the left edge of the headline, the label, and the body often share a line, while the right side is allowed to break. The eye gets a spine. The composition gets tension. If every element is offset, the page is just messy, and mess is not a style." },
+      { "type": "p", "text": "High contrast is the other kindness. Ink on paper, paper on ink, black on lime. We use the studio grey for labels and metadata, and we keep paragraphs in the light or the dark field where the contrast holds. A brutalist page that fails contrast is not committed. It is unfinished." },
+      { "type": "quote", "text": "The frame should be visible. The sentence should be easy." },
+      { "type": "h2", "text": "Texture is secondary" },
+      { "type": "p", "text": "Halftone, grain, and masks are texture. They sit behind the reading, at low opacity, and they never carry a label. If you remove them and the page collapses, they were doing a job that type should have done. We like them. We do not depend on them." },
+      { "type": "p", "text": "The reference point is a printed page that can be understood from the doorway and read comfortably in the chair. Scale and clarity are the whole argument. The rest is manners." }
+    ]
+  },
+  {
+    "id": "cccccccc-cccc-4ccc-8ccc-ccccccccccc5",
+    "slug": "inside-a-concept-sprint",
+    "title": "Inside a concept sprint",
+    "excerpt": "How a fictional project still gets a real process: platform, system, prototype, and an edit that hurts a little.",
+    "categorySlug": "process",
+    "publishedAt": "2026-06-30",
+    "seoTitle": "Inside a concept sprint — FRAME Studio Journal",
+    "seoDescription": "The four-part process FRAME uses on concept projects, from the creative platform to the final edit.",
+    "published": true,
+    "blocks": [
+      { "type": "p", "text": "The projects in this site are fictional. The sequence we use to make them is not a sketch. A concept sprint is how we keep an invented brand from becoming a moodboard with a name." },
+      { "type": "h2", "text": "Day one is a platform" },
+      { "type": "p", "text": "We write a short platform: the idea, the audience inside the fiction, the tension, and the proof we will show. For Velora, the tension was editorial tone versus the need to choose a size. For Pulse, it was a metric that had to stay humble inside a writing tool. If the platform cannot be said in a few sentences, the sprint is not ready for pictures." },
+      { "type": "h2", "text": "Then a system, then a scene" },
+      { "type": "p", "text": "We design the rules before the hero. Type roles, color limits, content fields, the thing the interface refuses to do. Scenes come after: a product page, a poster, a room. Scenes are how we test the rules. They are not a substitute for them." },
+      { "type": "p", "text": "The prototype uses original copy. Placeholder text hides hierarchy problems, so we do not use it. A case study that cannot explain the challenge in plain language is sent back to the platform." },
+      { "type": "quote", "text": "A concept still has to survive contact with a real sentence." },
+      { "type": "h2", "text": "The edit" },
+      { "type": "p", "text": "At the end we remove the competent piece that does not serve the platform. This is the part that feels like a loss and reads as confidence. Orbit lost a photographic direction because the diagram was the campaign. Mono lost a warm accent color because warmth was supposed to come from the words and the crop." },
+      { "type": "p", "text": "When the sprint works, a stranger can open the case study and retell the decision. That retelling is the deliverable we care about, even when the brand itself is invented." }
+    ]
+  },
+  {
+    "id": "cccccccc-cccc-4ccc-8ccc-ccccccccccc6",
+    "slug": "color-that-survives-the-feed",
+    "title": "Color that survives the feed",
+    "excerpt": "A color system has to work as a crop, a favicon, and a paragraph, not only as a palette slide.",
+    "categorySlug": "craft",
+    "publishedAt": "2026-06-09",
+    "seoTitle": "Color that survives the feed — FRAME Studio Journal",
+    "seoDescription": "How FRAME builds small color systems that stay recognizable in a thumbnail, a product UI, and a long read.",
+    "published": true,
+    "blocks": [
+      { "type": "p", "text": "Most palettes are designed as a row of squares. They fail the moment they are cropped into a square on a phone, printed in one color, or placed behind a paragraph. A color system has to survive those three tests or it is only a slide." },
+      { "type": "h2", "text": "Name the roles" },
+      { "type": "p", "text": "We name roles before we fall in love with a hex. Field, paper, signal, support. Field is the ground. Paper is the reading color. Signal is the one accent that is allowed to mean 'this matters.' Support is for metadata and lines. Four roles are enough for almost every concept in this site. Extra colors have to audition for a job the first four cannot do." },
+      { "type": "p", "text": "Orbit uses a second accent because the fiction has two programs, day and night, and one signal color would have lied. That is a job. A favorite swatch is not a job." },
+      { "type": "quote", "text": "If the crop is unrecognizable without the wordmark, the color is not doing enough." },
+      { "type": "h2", "text": "Test the small sizes" },
+      { "type": "p", "text": "We look at the system as a favicon, a one-inch diagram, and a block of body text. Electric lime on black survives all three. Lime as small text on warm paper does not, so we do not use it that way. The brand color can be a ground for black type and still be the brand. It does not have to be the type." },
+      { "type": "p", "text": "Contrast is checked, not guessed. The studio grey is for labels that are large enough to hold it. Long reading stays in paper or ink. A system that looks severe and reads poorly has failed the only test that counts." }
+    ]
+  }
+]

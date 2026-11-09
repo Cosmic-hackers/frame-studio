@@ -1,0 +1,53 @@
+{
+  "intro": "FRAME Studio is an independent creative practice invented for this website. We use it to show how branding, interface design, motion, and engineering can share one voice. Nothing here is a client engagement. The brands, articles, and people are concepts.",
+  "mission": "Make ambitious ideas impossible to ignore, and impossible to misunderstand. Attention is the start. Clarity is the work.",
+  "philosophy": [
+    "A studio should have a point of view before it has a style. The black field, the lime signal, and the oversized type are tools. The decision underneath them is what we protect.",
+    "We would rather ship one precise interaction than a page full of motion that apologizes for weak structure.",
+    "Fictional work still has to obey real constraints: responsive layout, accessible type, readable contrast, and a form that actually stores a message."
+  ],
+  "values": [
+    {
+      "title": "Clarity over costume",
+      "text": "Decoration has to earn its place. If the idea is strong, the layout can be severe."
+    },
+    {
+      "title": "Systems, then scenes",
+      "text": "A mark, a type ramp, and a content model come before the hero shot."
+    },
+    {
+      "title": "Make it usable",
+      "text": "Keyboard paths, reduced motion, and labeled forms are part of the craft, not a checklist after the craft."
+    },
+    {
+      "title": "Edit in public",
+      "text": "We show the reasoning on the case study, including what the concept refused to do."
+    }
+  ],
+  "capabilities": [
+    "Brand identity and verbal systems",
+    "Product interface design",
+    "Web development in Next.js",
+    "Motion and interaction",
+    "Creative direction for launches",
+    "Content models and editorial sites"
+  ],
+  "approach": [
+    {
+      "title": "Listen",
+      "text": "We start with the ambition, the constraint, and the sentence the work must make true."
+    },
+    {
+      "title": "Frame",
+      "text": "A short platform decides the idea, the audience, and the proof we will put on screen."
+    },
+    {
+      "title": "Make",
+      "text": "Design and engineering proceed together so the interaction is designed, not approximated."
+    },
+    {
+      "title": "Release",
+      "text": "We test the routes, the form, and the story, then hand over something an operator can run."
+    }
+  ]
+}

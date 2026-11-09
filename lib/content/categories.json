@@ -1,0 +1,17 @@
+[
+  {
+    "id": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb1",
+    "slug": "perspective",
+    "name": "Perspective"
+  },
+  {
+    "id": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb2",
+    "slug": "process",
+    "name": "Process"
+  },
+  {
+    "id": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb3",
+    "slug": "craft",
+    "name": "Craft"
+  }
+]

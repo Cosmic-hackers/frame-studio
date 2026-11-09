@@ -1,0 +1,34 @@
+[
+  {
+    "id": "dddddddd-dddd-4ddd-8ddd-ddddddddddd1",
+    "name": "Mira Ellison",
+    "role": "Creative direction",
+    "bio": "Demo profile. Mira is an invented creative director used to show how FRAME would introduce a studio lead. She is not a real person and does not represent a working studio.",
+    "isDemo": true,
+    "sortOrder": 1
+  },
+  {
+    "id": "dddddddd-dddd-4ddd-8ddd-ddddddddddd2",
+    "name": "Jonah Adeyemi",
+    "role": "Design",
+    "bio": "Demo profile. Jonah is a fictional design lead created for this concept site. The biography, portrait absence, and credit exist only to demonstrate a team layout.",
+    "isDemo": true,
+    "sortOrder": 2
+  },
+  {
+    "id": "dddddddd-dddd-4ddd-8ddd-ddddddddddd3",
+    "name": "Sasha Petrov",
+    "role": "Development",
+    "bio": "Demo profile. Sasha is an invented engineer in the FRAME story. No client history or employment claim should be inferred from this card.",
+    "isDemo": true,
+    "sortOrder": 3
+  },
+  {
+    "id": "dddddddd-dddd-4ddd-8ddd-ddddddddddd4",
+    "name": "Noor Rahman",
+    "role": "Motion",
+    "bio": "Demo profile. Noor is a fictional motion designer used to complete the studio page. The role is illustrative, not a real appointment.",
+    "isDemo": true,
+    "sortOrder": 4
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "11111111-1111-4111-8111-111111111111",
+    "slug": "novara",
+    "title": "Novara",
+    "clientName": "Novara",
+    "category": "Technology branding",
+    "year": 2026,
+    "summary": "A signal system for an invented hardware company that needed to feel precise without turning cold.",
+    "overview": "Novara is a fictional technology brand created for this case study. The concept imagines a company that builds compact sensing tools for studios and labs. The identity had to read as engineered, but the product story was about attention, not machinery. We designed a mark that behaves like a calibration tick, a type system with one loud grotesque and one quiet mono, and a lime signal reserved for the moment the product confirms a reading.",
+    "clientDescription": "Novara is not a real company and has no relationship to any operating business with a similar name. In the fiction, it is a small hardware studio selling precise instruments to people who already care about their tools. The audience is technical, impatient with startup decoration, and loyal to brands that look like they were drawn by the people who built the object.",
+    "challenge": "Technology branding often borrows the same blue gradient and friendly blob. Novara had to be recognizable in a product render, a dense specification sheet, and a one-word nav. The system also had to survive being printed in one color on a metal enclosure.",
+    "strategy": "We treated the brand as a measurement, not a mascot. The wordmark is set tight. The symbol is a broken circle that closes when the product is 'in frame.' Color is mostly ink and paper. Electric lime appears only as confirmation: a status, a link, a recorded value. That scarcity is the personality.",
+    "process": [
+      {
+        "title": "Language",
+        "text": "We wrote a six-line brand story and banned words the fiction would never say: seamless, disrupt, next-gen."
+      },
+      {
+        "title": "Mark",
+        "text": "Three symbol directions were reduced to the calibration ring after it stayed legible at 16 pixels and engraved at 8 millimetres."
+      },
+      {
+        "title": "Rules",
+        "text": "Guidelines show the mark on product, packaging, and a software screen, including the one-color metal version."
+      },
+      {
+        "title": "Proof",
+        "text": "A short interface prototype uses the type and color rules so the identity is judged in use, not on a board."
+      }
+    ],
+    "outcome": "The concept resolves to a system a hardware team could actually extend: a mark, four colors, two type roles, and a verbal rule. It is presented here as a study, not as a launched product. The outcome we are claiming is the clarity of the system, which you can read on this page.",
+    "typography": ["Anton", "Manrope", "IBM Plex Mono"],
+    "colors": [
+      { "name": "Ink", "hex": "#111111" },
+      { "name": "Paper", "hex": "#F5F5F0" },
+      { "name": "Signal", "hex": "#C8FF00" },
+      { "name": "Graphite", "hex": "#5C5C5C" }
+    ],
+    "technologies": ["Identity system", "Design tokens", "Next.js prototype", "SVG mark"],
+    "serviceSlugs": ["branding", "creative"],
+    "gallery": [
+      { "alt": "Novara wordmark on a black field with a lime calibration ring", "caption": "The mark closes when a reading is confirmed." },
+      { "alt": "Specification sheet using mono labels and a single lime value", "caption": "Lime is reserved for the number that matters." },
+      { "alt": "Metal enclosure study in one-color engraving", "caption": "The one-color version is the real test." }
+    ],
+    "featured": true,
+    "published": true,
+    "sortOrder": 1,
+    "fictional": true
+  },
+  {
+    "id": "22222222-2222-4222-8222-222222222222",
+    "slug": "velora",
+    "title": "Velora",
+    "clientName": "Velora",
+    "category": "Fashion e-commerce",
+    "year": 2026,
+    "summary": "An editorial storefront for a fictional clothing label that sells fewer pieces and describes them properly.",
+    "overview": "Velora is an invented fashion label. The concept store refuses the infinite grid. Each garment gets a page with material, cut, and a short note from the fictional design room. The shop is a sequence: issue, garment, detail, size. Checkout is quiet. The interface borrows from a magazine contents page more than from a marketplace.",
+    "clientDescription": "In the story, Velora releases two collections a year and keeps archive pieces available until they are gone. The shopper is someone who reads the fabric note before the price. Velora is a concept brand created for this website. It is not a store you can buy from, and it is not based on a real label.",
+    "challenge": "Fashion commerce templates optimize for density. Velora needed enough structure to choose a size without turning the garment into a thumbnail. Product photography in the concept is represented by composed frames, because this study does not use another brand's campaign imagery.",
+    "strategy": "We designed the shop as an issue. The index is typographic. A product opens into a long page: image, name, price, essay, specifications, sizes. Filters are few: cut, material, availability. Motion is limited to the image mask and the size selector.",
+    "process": [
+      {
+        "title": "Catalog model",
+        "text": "We defined the fields a garment must have before drawing a single product card."
+      },
+      {
+        "title": "Index",
+        "text": "The listing page was prototyped as a contents list, then as an image index, and the list won for clarity."
+      },
+      {
+        "title": "Product page",
+        "text": "Hierarchy puts the garment name and the material note above the add-to-bag action."
+      },
+      {
+        "title": "States",
+        "text": "Sold out, waitlist, and size guidance were designed as part of the page, not as alerts."
+      }
+    ],
+    "outcome": "The study produces a storefront structure that keeps editorial tone without hiding the purchase. Sample products in the prototype are fictional garments with invented prices. No transaction runs on this site.",
+    "typography": ["Anton", "Manrope"],
+    "colors": [
+      { "name": "Cocoa", "hex": "#1A1210" },
+      { "name": "Blush", "hex": "#F3D6C8" },
+      { "name": "Seal", "hex": "#E24B4B" },
+      { "name": "Ivory", "hex": "#F7F1EA" }
+    ],
+    "technologies": ["Information architecture", "Interface design", "Next.js prototype", "Content model"],
+    "serviceSlugs": ["ui-ux", "development"],
+    "gallery": [
+      { "alt": "Typographic contents page listing fictional Velora garments", "caption": "The index reads like a contents page." },
+      { "alt": "Product page with material note beside a blush color field", "caption": "The fabric note sits above the price." },
+      { "alt": "Size selector with a quiet sold-out state", "caption": "Unavailable sizes stay visible and explained." }
+    ],
+    "featured": true,
+    "published": true,
+    "sortOrder": 2,
+    "fictional": true
+  },
+  {
+    "id": "33333333-3333-4333-8333-333333333333",
+    "slug": "aether",
+    "title": "Aether",
+    "clientName": "Aether",
+    "category": "Digital experience",
+    "year": 2026,
+    "summary": "A narrative site for a fictional spatial-audio lab, built as a sequence of listening rooms.",
+    "overview": "Aether is an invented lab studying how sound occupies a room. The concept site is not a brochure. It is a series of rooms: arrival, method, instrument, and an open note. Each room has one idea, one visual instrument, and one paragraph that can be read without the animation. Scroll reveals the instrument. The copy still works if motion is reduced.",
+    "clientDescription": "The fictional lab publishes tools for composers and exhibition designers. Visitors in the concept are curious practitioners, not investors. Aether does not exist as a company, a product, or a research group outside this case study.",
+    "challenge": "Experiential sites often hide the content inside the effect. Aether had to feel spatial and still be a document you can quote, share, and finish on a phone in two minutes.",
+    "strategy": "We split every scene into a stable text column and a visual instrument. The instrument can be a ring, a field of points, or a held tone represented as type. Nothing necessary lives only in the animation. Navigation is a simple room index.",
+    "process": [
+      {
+        "title": "Script",
+        "text": "The experience was written as four rooms before any visual was drawn."
+      },
+      {
+        "title": "Instrument",
+        "text": "Each room received one interactive device with a still fallback of equal hierarchy."
+      },
+      {
+        "title": "Type",
+        "text": "Oversized numerals mark the room. Body copy stays in a measure narrow enough to read."
+      },
+      {
+        "title": "Pass",
+        "text": "We walked the sequence with a keyboard and with reduced motion, then removed a parallax layer that failed both."
+      }
+    ],
+    "outcome": "The concept demonstrates a digital experience that is authored like an essay. It is a prototype narrative, not a deployed installation. The lesson we keep is the split between reading and instrument.",
+    "typography": ["Anton", "IBM Plex Mono"],
+    "colors": [
+      { "name": "Night", "hex": "#0B1020" },
+      { "name": "Violet", "hex": "#7C5CFF" },
+      { "name": "Tide", "hex": "#3EE0C5" },
+      { "name": "Mist", "hex": "#F4F1FF" }
+    ],
+    "technologies": ["Next.js", "Motion", "SVG instruments", "Accessible fallbacks"],
+    "serviceSlugs": ["development", "motion"],
+    "gallery": [
+      { "alt": "Room index with oversized numerals on a night field", "caption": "Four rooms, one idea each." },
+      { "alt": "Listening ring drawn in violet and tide on black", "caption": "The instrument sits beside the paragraph, not instead of it." },
+      { "alt": "Reduced-motion still of the same listening room", "caption": "The still composition keeps the hierarchy." }
+    ],
+    "featured": true,
+    "published": true,
+    "sortOrder": 3,
+    "fictional": true
+  },
+  {
+    "id": "44444444-4444-4444-8444-444444444444",
+    "slug": "mono",
+    "title": "Mono",
+    "clientName": "Mono",
+    "category": "Lifestyle identity",
+    "year": 2026,
+    "summary": "A near-monochrome identity for a fictional homeware line that wanted warmth without pastel.",
+    "overview": "Mono is an invented homeware brand. Objects in the fiction are heavy, repairable, and few. The identity uses almost no color. Warmth comes from paper stock, a slightly irregular wordmark, and photography direction described as 'daylight on a material, not a lifestyle scene.' The guidelines spend more pages on what not to show than on filters.",
+    "clientDescription": "In the concept, Mono sells tables, vessels, and lamps through a short seasonal note rather than a discount calendar. The customer is someone furnishing one good room. Mono is a fictional brand built for this study. It is not a manufacturer, and the objects are not for sale.",
+    "challenge": "Lifestyle identities slide into the same beige editorial. Mono needed to feel human while staying severe, and the system had to tell a photographer what to exclude.",
+    "strategy": "We reduced the palette to ink, paper, and a single grey, then put the personality in cropping and language. Product names are plain: Lamp 02, Vessel 04. Captions talk about weight, edge, and repair. People appear only as hands using an object.",
+    "process": [
+      {
+        "title": "Refusal list",
+        "text": "The first artifact was a list of images the brand would not publish."
+      },
+      {
+        "title": "Wordmark",
+        "text": "The name is set in the display grotesque with slightly open tracking so it feels carved, not shouted."
+      },
+      {
+        "title": "Catalog",
+        "text": "A sixteen-page seasonal note shows object, material, and a repair note."
+      },
+      {
+        "title": "Voice",
+        "text": "Sentences stay under twenty words. Adjectives have to name a material fact."
+      }
+    ],
+    "outcome": "The identity is a restraint system: palette, crop, naming, and a voice guide. Shown as a concept catalog, not a launched shop. The useful result is a brand that can add an object without adding a campaign.",
+    "typography": ["Anton", "Manrope"],
+    "colors": [
+      { "name": "Ink", "hex": "#111111" },
+      { "name": "Paper", "hex": "#F5F5F0" },
+      { "name": "Ash", "hex": "#858585" },
+      { "name": "White", "hex": "#FFFFFF" }
+    ],
+    "technologies": ["Identity system", "Editorial layout", "Verbal guidelines"],
+    "serviceSlugs": ["branding", "creative"],
+    "gallery": [
+      { "alt": "Mono wordmark in ink on warm paper", "caption": "Tracking is open so the name feels carved." },
+      { "alt": "Catalog spread naming Lamp 02 with a material caption", "caption": "Objects use numbers, not nicknames." },
+      { "alt": "Crop study showing an edge and a hand, not a styled room", "caption": "The crop guide bans the lifestyle scene." }
+    ],
+    "featured": false,
+    "published": true,
+    "sortOrder": 4,
+    "fictional": true
+  },
+  {
+    "id": "55555555-5555-4555-8555-555555555555",
+    "slug": "orbit",
+    "title": "Orbit",
+    "clientName": "Orbit",
+    "category": "Creative campaign",
+    "year": 2026,
+    "summary": "A launch campaign for a fictional cultural festival that unfolds as a sequence of announcements, not a single poster.",
+    "overview": "Orbit is an invented one-week festival of talks, screenings, and night performances. The campaign concept releases the lineup as orbits: an outer ring of dates, a middle ring of themes, an inner ring of names. Each week before the fiction festival, one ring is completed. Motion is a slow rotation, always interruptible, never a loader.",
+    "clientDescription": "The festival in the story takes place in a city that is deliberately unnamed so the concept cannot be mistaken for a real event. Speakers and films are invented. Orbit is a campaign study. It is not an invitation, a ticket sale, or a real program.",
+    "challenge": "Festival campaigns collapse into a crowded poster. Orbit needed suspense across several weeks and a system that still made sense when someone saw only the third announcement.",
+    "strategy": "Every asset is a partial orbit. A single post always shows the full ring structure with unknown slots marked, so a late viewer understands the shape. Color is limited to lime for confirmed names and a hot accent for the night program. Type does the shouting. Imagery is typographic.",
+    "process": [
+      {
+        "title": "Calendar",
+        "text": "We wrote the six-week release order before designing a frame."
+      },
+      {
+        "title": "Ring",
+        "text": "The orbit diagram was tested at story size and at poster size."
+      },
+      {
+        "title": "Voice",
+        "text": "Announcements are one sentence plus the new names. No hype line repeated across weeks."
+      },
+      {
+        "title": "Motion",
+        "text": "Rotation is slow and pauses on focus. Reduced motion shows the completed frame immediately."
+      }
+    ],
+    "outcome": "The study is a campaign system with a release logic, a diagram, and motion rules. It was not run in market. Its value is the decision to make every fragment explain the whole.",
+    "typography": ["Anton", "IBM Plex Mono"],
+    "colors": [
+      { "name": "Field", "hex": "#10140F" },
+      { "name": "Lime", "hex": "#C8FF00" },
+      { "name": "Night accent", "hex": "#FF5C1C" },
+      { "name": "Dust", "hex": "#E7E2D6" }
+    ],
+    "technologies": ["Campaign system", "Motion study", "SVG diagram"],
+    "serviceSlugs": ["motion", "creative"],
+    "gallery": [
+      { "alt": "Orbit diagram with confirmed names in lime and open slots in grey", "caption": "Open slots stay visible so the shape is learnable." },
+      { "alt": "Announcement card with one new sentence and three names", "caption": "Each week adds names, not a new slogan." },
+      { "alt": "Poster crop of the outer date ring", "caption": "The poster is the same diagram, larger." }
+    ],
+    "featured": false,
+    "published": true,
+    "sortOrder": 5,
+    "fictional": true
+  },
+  {
+    "id": "66666666-6666-4666-8666-666666666666",
+    "slug": "pulse",
+    "title": "Pulse",
+    "clientName": "Pulse",
+    "category": "Digital product",
+    "year": 2026,
+    "summary": "A focused writing tool for a fictional newsroom that measures attention without turning writers into a dashboard.",
+    "overview": "Pulse is an invented product for editors. The concept tracks which stories a reader finishes, then shows the writer one signal: where people leave. It does not show a wall of charts. The interface is a manuscript with a single margin note. The product study covers the editor's morning loop: open a story, read the leave-point, revise the section, mark it done.",
+    "clientDescription": "In the fiction, Pulse is used by a small newsroom that publishes essays and reported features. It is not a real application, not a startup, and not affiliated with any analytics company. Sample stories inside the prototype are original text written for the study.",
+    "challenge": "Analytics products bury the sentence that needs work under graphs. Pulse had to feel like a writing tool that happens to know something, and it had to be honest about what a leave-point cannot prove.",
+    "strategy": "We designed the primary screen as the draft. The signal sits in the margin at the paragraph where readers leave, with a plain-language note: 'Many readers stop here. This does not say why.' Secondary screens exist for editors who want the trend, two clicks away, never on the writing surface.",
+    "process": [
+      {
+        "title": "Loop",
+        "text": "We scripted the morning task and refused any feature that did not serve that loop."
+      },
+      {
+        "title": "Margin",
+        "text": "The signal was prototyped as a chart, a highlight, and a margin note. The note won."
+      },
+      {
+        "title": "Honesty",
+        "text": "Every metric on screen includes the limit of what it means."
+      },
+      {
+        "title": "Build",
+        "text": "A Next.js prototype uses original sample essays so the interface can be judged with real paragraphs."
+      }
+    ],
+    "outcome": "The concept product shows a narrower analytics surface that respects the draft. It is not shipping software. The outcome is a flow, a component set, and a rule for how metrics are allowed to speak.",
+    "typography": ["Manrope", "IBM Plex Mono"],
+    "colors": [
+      { "name": "Plum", "hex": "#140818" },
+      { "name": "Hot", "hex": "#FF2E88" },
+      { "name": "Lime", "hex": "#C8FF00" },
+      { "name": "Paper", "hex": "#F5F5F0" }
+    ],
+    "technologies": ["Product framing", "Interface design", "Next.js prototype", "Sample content model"],
+    "serviceSlugs": ["ui-ux", "development"],
+    "gallery": [
+      { "alt": "Manuscript screen with a single margin note at a paragraph", "caption": "The signal lives in the margin of the draft." },
+      { "alt": "Leave-point note explaining the limit of the metric", "caption": "The interface says what the number cannot prove." },
+      { "alt": "Secondary trend view two steps away from the writing surface", "caption": "Charts are available, and they are not the home screen." }
+    ],
+    "featured": true,
+    "published": true,
+    "sortOrder": 6,
+    "fictional": true
+  }
+]

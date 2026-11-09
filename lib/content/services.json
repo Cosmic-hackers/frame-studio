@@ -1,0 +1,197 @@
+[
+  {
+    "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa1",
+    "slug": "branding",
+    "title": "Brand identity",
+    "summary": "Naming, marks, type, color, and the rules that keep a brand recognizable when the work leaves the studio.",
+    "overview": "Identity work at FRAME starts with the idea that has to survive a crowded feed, a product interface, and a quiet document. We build systems, not a single logo locked in a presentation. Every identity on this site is a fictional concept, invented so the thinking can be shown in full.",
+    "capabilities": [
+      "Naming territories and verbal identity",
+      "Marks, monograms, and responsive logos",
+      "Type and color systems",
+      "Brand guidelines that a team can actually use",
+      "Art direction for launch campaigns"
+    ],
+    "process": [
+      {
+        "title": "Signal",
+        "text": "We define what the brand must be recognized for, and what it should refuse to become."
+      },
+      {
+        "title": "Territory",
+        "text": "We explore distinct directions, then pressure-test them against packaging, product UI, and motion."
+      },
+      {
+        "title": "System",
+        "text": "The chosen direction becomes type, color, layout, and language rules with examples, not slogans."
+      },
+      {
+        "title": "Handoff",
+        "text": "Guidelines, assets, and a short working session so the people using the brand can extend it."
+      }
+    ],
+    "deliverables": [
+      "Strategic narrative",
+      "Logo suite and clear-space rules",
+      "Color, type, and layout system",
+      "Verbal guidelines",
+      "Launch applications"
+    ]
+  },
+  {
+    "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa2",
+    "slug": "ui-ux",
+    "title": "UI/UX design",
+    "summary": "Product interfaces with a point of view: clear structure, sharp typography, and interaction that explains itself.",
+    "overview": "We design digital products as editorial objects. Hierarchy does the talking. Flows are short. States are designed, including empty, loading, and error. The interface should feel inevitable once you have used it, and distinctive before you have.",
+    "capabilities": [
+      "Product framing and information architecture",
+      "User flows and wireframes",
+      "High-fidelity interface design",
+      "Design systems and component specs",
+      "Prototype reviews with engineering"
+    ],
+    "process": [
+      {
+        "title": "Frame",
+        "text": "We map the job of the product, the people using it, and the decisions the interface must support."
+      },
+      {
+        "title": "Structure",
+        "text": "Flows and wireframes settle the sequence before visual design spends attention in the wrong place."
+      },
+      {
+        "title": "Surface",
+        "text": "Typography, color, and motion give the structure a voice without hiding the task."
+      },
+      {
+        "title": "Spec",
+        "text": "Components, states, and redlines go to engineering with the edge cases written down."
+      }
+    ],
+    "deliverables": [
+      "Flow maps",
+      "Wireframes",
+      "Interface design",
+      "Component library",
+      "Prototype"
+    ]
+  },
+  {
+    "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa3",
+    "slug": "development",
+    "title": "Web development",
+    "summary": "Front-end engineering for sites and products that need to feel as considered as they look.",
+    "overview": "We build with Next.js, typed components, and a performance budget. Animation is progressive. Pages work with a keyboard. Content is structured so it can be edited without breaking the layout. The studio site you are reading is the working example.",
+    "capabilities": [
+      "Next.js and TypeScript builds",
+      "Design-system implementation",
+      "Accessible interaction",
+      "CMS and database integration",
+      "Performance and SEO pass"
+    ],
+    "process": [
+      {
+        "title": "Foundation",
+        "text": "We agree the stack, the content model, and the pages that must exist before decoration begins."
+      },
+      {
+        "title": "Build",
+        "text": "Components land in the order the story needs them, with real content rather than placeholder blocks."
+      },
+      {
+        "title": "Harden",
+        "text": "We test routes, forms, keyboard paths, reduced motion, and the production build."
+      },
+      {
+        "title": "Release",
+        "text": "Deployment notes, environment variables, and a short handover for whoever operates the site."
+      }
+    ],
+    "deliverables": [
+      "Production codebase",
+      "Component library",
+      "Content model",
+      "Documentation",
+      "Deployment setup"
+    ]
+  },
+  {
+    "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa4",
+    "slug": "motion",
+    "title": "Motion design",
+    "summary": "Movement that explains hierarchy, change, and timing. If a transition has no job, it does not ship.",
+    "overview": "Motion at FRAME is a narrative tool. Type arrives with intent. Images reveal through masks. Page changes stay short enough to respect a person who just wants the next page. Reduced-motion preferences are part of the design, not a patch at the end.",
+    "capabilities": [
+      "Title and editorial motion",
+      "Interface micro-interaction",
+      "Scroll-linked sequences",
+      "Campaign loops and idents",
+      "Motion guidelines"
+    ],
+    "process": [
+      {
+        "title": "Intent",
+        "text": "Each movement gets a reason: orientation, emphasis, feedback, or continuity."
+      },
+      {
+        "title": "Timing",
+        "text": "We set duration and easing against the pace of the page, then cut anything that delays the task."
+      },
+      {
+        "title": "System",
+        "text": "Repeated interactions share timing so the product feels like one instrument."
+      },
+      {
+        "title": "Fallback",
+        "text": "Reduced motion gets a still composition that carries the same hierarchy."
+      }
+    ],
+    "deliverables": [
+      "Motion principles",
+      "Interface transitions",
+      "Hero sequences",
+      "Exported assets",
+      "Implementation notes"
+    ]
+  },
+  {
+    "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa5",
+    "slug": "creative",
+    "title": "Creative direction",
+    "summary": "The through-line for identity, product, and campaign so the work feels authored rather than assembled.",
+    "overview": "Creative direction is how FRAME decides what not to make. We set the concept, the references worth keeping, the tone of voice, and the sequence of releases. The rest of the studio builds inside that frame.",
+    "capabilities": [
+      "Concept and narrative",
+      "Art direction",
+      "Campaign structure",
+      "Cross-discipline reviews",
+      "Launch sequencing"
+    ],
+    "process": [
+      {
+        "title": "Listen",
+        "text": "We learn the ambition, the constraint, and the audience that must feel the difference."
+      },
+      {
+        "title": "Position",
+        "text": "A short creative platform names the idea, the tension, and the proof we will show."
+      },
+      {
+        "title": "Direct",
+        "text": "Design, motion, and engineering reviews stay tied to that platform."
+      },
+      {
+        "title": "Edit",
+        "text": "We remove the work that is competent but does not serve the idea."
+      }
+    ],
+    "deliverables": [
+      "Creative platform",
+      "Art direction boards",
+      "Tone of voice",
+      "Review cadence",
+      "Launch narrative"
+    ]
+  }
+]
