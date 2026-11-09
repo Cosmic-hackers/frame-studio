@@ -108,11 +108,11 @@ export const PROJECT_TYPES = [
 ] as const;
 
 export const BUDGET_RANGES = [
-  "Under 15,000",
-  "15,000–40,000",
-  "40,000–80,000",
-  "80,000 and above",
-  "Still defining the budget",
+  "₹50,000 – ₹1,50,000 ($600 – $1,800)",
+  "₹1,50,000 – ₹3,50,000 ($1,800 – $4,200)",
+  "₹3,50,000 – ₹8,00,000 ($4,200 – $10,000)",
+  "₹8,00,000+ ($10,000+)",
+  "Custom / Flexible Budget",
 ] as const;
 
 export const TIMELINES = [

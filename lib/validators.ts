@@ -6,7 +6,7 @@ export const inquirySchema = z.object({
   email: z.email("Use a valid email address."),
   company: z.string().trim().max(120).optional().default(""),
   projectType: z.enum(PROJECT_TYPES, "Choose a project type."),
-  budgetRange: z.enum(BUDGET_RANGES, "Choose a budget range."),
+  budgetRange: z.string().trim().min(2, "Choose or enter a budget range.").max(120),
   timeline: z.enum(TIMELINES, "Choose a timeline."),
   description: z
     .string()

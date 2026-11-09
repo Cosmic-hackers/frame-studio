@@ -16,6 +16,13 @@ const initialState: ActionState = {
 export function InquiryForm() {
   const [state, formAction, isPending] = useActionState(submitInquiry, initialState);
   const [startedAt] = useState<string>(() => Date.now().toString());
+  const [selectedBudget, setSelectedBudget] = useState<string>(BUDGET_RANGES[1]);
+  const [customBudget, setCustomBudget] = useState("");
+
+  const finalBudget =
+    selectedBudget === "Custom / Flexible Budget" && customBudget.trim()
+      ? customBudget.trim()
+      : selectedBudget;
 
   return (
     <div className="w-full">
@@ -57,6 +64,17 @@ export function InquiryForm() {
           <p className="text-neutral-400 text-sm mt-2 max-w-sm mx-auto">
             Thank you for reaching out. We will review your inquiry and get back to you within 48 hours.
           </p>
+
+          <div className="mt-8 pt-6 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a
+              href="https://wa.me/919390291870?text=Hello%20FRAME%20Studio%2C%20I%20just%20submitted%20a%20project%20inquiry."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#25D366]/15 border border-[#25D366]/40 text-[#25D366] px-5 py-2.5 text-xs font-mono font-bold tracking-wider uppercase rounded-xs hover:bg-[#25D366] hover:text-black transition-all"
+            >
+              <span>💬 Direct WhatsApp: +91 9390291870</span>
+            </a>
+          </div>
         </motion.div>
       ) : (
         <form action={formAction} className="space-y-4 text-xs">
@@ -148,17 +166,18 @@ export function InquiryForm() {
 
             <div>
               <label className="block text-[11px] font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">
-                Budget Range <span className="text-[#c8ff00]">*</span>
+                Budget (₹ &amp; $) <span className="text-[#c8ff00]">*</span>
               </label>
+              <input type="hidden" name="budgetRange" value={finalBudget} />
               <div className="relative">
                 <select
-                  name="budgetRange"
-                  defaultValue={BUDGET_RANGES[1]}
+                  value={selectedBudget}
+                  onChange={(e) => setSelectedBudget(e.target.value)}
                   className="w-full bg-[#0d0d0d] border border-neutral-800 px-3.5 py-3.5 text-sm text-white rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200 appearance-none cursor-pointer"
                 >
                   {BUDGET_RANGES.map((b) => (
                     <option key={b} value={b} className="bg-[#111111] text-white">
-                      {b.startsWith("Still") || b.startsWith("Under") ? b : `$${b}`}
+                      {b}
                     </option>
                   ))}
                 </select>
@@ -166,6 +185,21 @@ export function InquiryForm() {
                   ▼
                 </span>
               </div>
+              {selectedBudget === "Custom / Flexible Budget" && (
+                <motion.div
+                  initial={{ opacity: 0, y: -4 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-2"
+                >
+                  <input
+                    type="text"
+                    value={customBudget}
+                    onChange={(e) => setCustomBudget(e.target.value)}
+                    placeholder="e.g. ₹2,00,000 or $2,500"
+                    className="w-full bg-[#111111] border border-neutral-700 px-3 py-2 text-xs text-white placeholder-neutral-500 rounded-xs focus:border-[#c8ff00] focus:outline-none transition-colors"
+                  />
+                </motion.div>
+              )}
               {state.fieldErrors?.budgetRange && (
                 <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.budgetRange}</p>
               )}

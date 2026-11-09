@@ -5,6 +5,7 @@ import type { ActionState } from "@/lib/action-state";
 import { assessTiming, countLinks, rateLimit } from "@/lib/spam";
 import { createPublicClient } from "@/lib/supabase/public";
 import { fieldErrorsFrom, inquirySchema } from "@/lib/validators";
+import { sendInquiryNotification } from "@/lib/notifications";
 
 export async function submitInquiry(
   _prev: ActionState,
@@ -100,6 +101,17 @@ export async function submitInquiry(
       fieldErrors: {},
     };
   }
+
+  // Dispatch background email & webhook notifications to studio owner
+  await sendInquiryNotification({
+    name: input.name,
+    email: input.email,
+    company: input.company?.trim() ? input.company.trim() : null,
+    projectType: input.projectType,
+    budgetRange: input.budgetRange,
+    timeline: input.timeline,
+    description: input.description,
+  });
 
   return {
     ok: true,
