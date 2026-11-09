@@ -59,7 +59,7 @@ export function InquiryForm() {
           </p>
         </motion.div>
       ) : (
-        <form action={formAction} className="space-y-5 text-xs">
+        <form action={formAction} className="space-y-4 text-xs">
           {/* Honeypot & timing */}
           <input
             type="text"
@@ -70,65 +70,143 @@ export function InquiryForm() {
             aria-hidden="true"
           />
           <input type="hidden" name="startedAt" value={startedAt} />
-          {/* Hidden fallbacks for schema requirements */}
-          <input type="hidden" name="budgetRange" value={BUDGET_RANGES[1]} />
-          <input type="hidden" name="timeline" value={TIMELINES[1]} />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-[11px] font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">
+                Name <span className="text-[#c8ff00]">*</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Jane Doe"
+                className="w-full bg-[#0d0d0d] border border-neutral-800 px-4 py-3.5 text-sm text-white placeholder-neutral-600 rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200"
+              />
+              {state.fieldErrors?.name && (
+                <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.name}</p>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">
+                Email Address <span className="text-[#c8ff00]">*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="jane@studio.com"
+                className="w-full bg-[#0d0d0d] border border-neutral-800 px-4 py-3.5 text-sm text-white placeholder-neutral-600 rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200"
+              />
+              {state.fieldErrors?.email && (
+                <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.email}</p>
+              )}
+            </div>
+          </div>
 
           <div>
+            <label className="block text-[11px] font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">
+              Company / Organization <span className="text-neutral-600 font-normal">(Optional)</span>
+            </label>
             <input
               type="text"
-              name="name"
-              required
-              placeholder="Name *"
-              className="w-full bg-[#0d0d0d] border border-neutral-800 px-4 py-3.5 text-sm text-white placeholder-neutral-500 rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200"
+              name="company"
+              placeholder="Acme Corp"
+              className="w-full bg-[#0d0d0d] border border-neutral-800 px-4 py-3.5 text-sm text-white placeholder-neutral-600 rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200"
             />
-            {state.fieldErrors?.name && (
-              <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.name}</p>
+            {state.fieldErrors?.company && (
+              <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.company}</p>
             )}
           </div>
 
-          <div>
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Email Address *"
-              className="w-full bg-[#0d0d0d] border border-neutral-800 px-4 py-3.5 text-sm text-white placeholder-neutral-500 rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200"
-            />
-            {state.fieldErrors?.email && (
-              <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.email}</p>
-            )}
-          </div>
-
-          <div>
-            <div className="relative">
-              <select
-                name="projectType"
-                defaultValue={PROJECT_TYPES[0]}
-                className="w-full bg-[#0d0d0d] border border-neutral-800 px-4 py-3.5 text-sm text-white placeholder-neutral-500 rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200 appearance-none cursor-pointer"
-              >
-                {PROJECT_TYPES.map((t) => (
-                  <option key={t} value={t} className="bg-[#111111] text-white">
-                    {t}
-                  </option>
-                ))}
-              </select>
-              <span className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-neutral-500 text-xs">
-                ▼
-              </span>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label className="block text-[11px] font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">
+                Project Type <span className="text-[#c8ff00]">*</span>
+              </label>
+              <div className="relative">
+                <select
+                  name="projectType"
+                  defaultValue={PROJECT_TYPES[0]}
+                  className="w-full bg-[#0d0d0d] border border-neutral-800 px-3.5 py-3.5 text-sm text-white rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200 appearance-none cursor-pointer"
+                >
+                  {PROJECT_TYPES.map((t) => (
+                    <option key={t} value={t} className="bg-[#111111] text-white">
+                      {t}
+                    </option>
+                  ))}
+                </select>
+                <span className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-neutral-500 text-xs">
+                  ▼
+                </span>
+              </div>
+              {state.fieldErrors?.projectType && (
+                <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.projectType}</p>
+              )}
             </div>
-            {state.fieldErrors?.projectType && (
-              <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.projectType}</p>
-            )}
+
+            <div>
+              <label className="block text-[11px] font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">
+                Budget Range <span className="text-[#c8ff00]">*</span>
+              </label>
+              <div className="relative">
+                <select
+                  name="budgetRange"
+                  defaultValue={BUDGET_RANGES[1]}
+                  className="w-full bg-[#0d0d0d] border border-neutral-800 px-3.5 py-3.5 text-sm text-white rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200 appearance-none cursor-pointer"
+                >
+                  {BUDGET_RANGES.map((b) => (
+                    <option key={b} value={b} className="bg-[#111111] text-white">
+                      {b.startsWith("Still") || b.startsWith("Under") ? b : `$${b}`}
+                    </option>
+                  ))}
+                </select>
+                <span className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-neutral-500 text-xs">
+                  ▼
+                </span>
+              </div>
+              {state.fieldErrors?.budgetRange && (
+                <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.budgetRange}</p>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">
+                Timeline <span className="text-[#c8ff00]">*</span>
+              </label>
+              <div className="relative">
+                <select
+                  name="timeline"
+                  defaultValue={TIMELINES[1]}
+                  className="w-full bg-[#0d0d0d] border border-neutral-800 px-3.5 py-3.5 text-sm text-white rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200 appearance-none cursor-pointer"
+                >
+                  {TIMELINES.map((tl) => (
+                    <option key={tl} value={tl} className="bg-[#111111] text-white">
+                      {tl}
+                    </option>
+                  ))}
+                </select>
+                <span className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-neutral-500 text-xs">
+                  ▼
+                </span>
+              </div>
+              {state.fieldErrors?.timeline && (
+                <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.timeline}</p>
+              )}
+            </div>
           </div>
 
           <div>
+            <label className="block text-[11px] font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">
+              Project Brief <span className="text-[#c8ff00]">*</span>
+            </label>
             <textarea
               name="description"
               required
               rows={4}
-              placeholder="Message — Tell us about the project and stage (min 30 characters)..."
-              className="w-full bg-[#0d0d0d] border border-neutral-800 p-4 text-sm text-white placeholder-neutral-500 rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200 resize-none"
+              placeholder="Tell us about your project goals, scope, and vision (min 30 characters)..."
+              className="w-full bg-[#0d0d0d] border border-neutral-800 p-4 text-sm text-white placeholder-neutral-600 rounded-xs focus:border-[#c8ff00] focus:shadow-[0_0_15px_rgba(200,255,0,0.15)] focus:outline-none transition-all duration-200 resize-none"
             />
             {state.fieldErrors?.description && (
               <p className="text-red-400 text-[11px] mt-1.5">{state.fieldErrors.description}</p>
